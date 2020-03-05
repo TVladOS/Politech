@@ -10,7 +10,7 @@ namespace Лабораторная_1
             Console.WriteLine("Lab_1, Task 18\n");
             Console.WriteLine("Insert the number: ");
 
-            double n = Convert.ToDouble(Console.ReadLine());
+            double n = Convert.ToDouble(Console.ReadLine()); ;
             double result = Math.Pow((n), 3);
 
             
