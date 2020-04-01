@@ -101,58 +101,7 @@ namespace Лабораторная 2а
             {
                 return a.Max();//используя стандартный метод массива возвр максимальный элемент
             }
-            class RectangTriangle : Triangle
-            {
-                public RectangTriangle(double a, double b, double c) : base(a, b, c)
-                {
-                    //используем конструктор базового класса
-                }
-
-                public void PryamouglChiNe()
-                {
-                    if ((A * A + B * B == C * C) || (A * A + C * C == B * B) || (C * C + B * B == A * A))
-                    {
-                        Console.WriteLine("Треугольник прямоугольный");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Треугольник не прямоугольный");
-                    }
-                }
-
-                public double MinGipot(params double[] a)
-                {
-                    return a.Min();
-                }
-                class Program
-                {
-
-                    static void Main(string[] args)
-                    {
-
-                    Triangle t1 = new Triangle();
-
-                    t1.A = 3;
-                    t1.B = 4;
-                    t1.C = 5;
-                    Console.WriteLine(t1.ToString());
-
-                    Triangle t2 = new Triangle(2, 6, 5);
-
-int k = 3;
-                    Triangle[] triangles = new Triangle[k];
-                    Random r = new Random();
-                    double square = 0;
-                    int realTriangles = 0;
-
-                   
-
-                    Console.WriteLine("Average square of " + realTriangles + " triangles is: " + square / realTriangles);
-                    Console.ReadKey();
-
-                    }
-                }
-            }
+            
         }
 
     }
